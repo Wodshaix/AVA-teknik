@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    margin-right: 10px;
+    margin-left: 30px;
+}
