@@ -6,3 +6,10 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+
+const wrapper = document.getElementById('burger_icon')
+
+wrapper.addEventListener("click", () => {
+  wrapper.classList.toggle("open")
+})

@@ -45,7 +45,8 @@ aside a{
 }
 
 .logo{
-    margin-bottom: 20pxs;
+  margin-bottom: 40px;
+  width: 150px;
 }
 
 i{
@@ -58,31 +59,33 @@ i{
 }
 
 img{
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin: 30px;
+  width: 400px;
 }
 
-.bil{
-    width: 400px;
+p{
+  max-width: 450px;
 }
 
-.soligt_datorer{
-    width: 400px;
+.planering{
+  width: 800px;
 }
 
-.teknik_tjejer{
-    width: 400px;
+div{
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  max-width: fit-content;
+  text-align: center;
 }
 
-.fängelse{
-    width: 350px;
+a{
+  max-width: 800px;
 }
 
 .t1{
     max-width: fit-content;
 }
-
-
 
 
 
@@ -97,7 +100,7 @@ body {
 }
 
 nav {
-  overflow: hidden;
+  align-items: center;
 }
 
 nav a {
@@ -120,28 +123,54 @@ nav a.active {
   color: white;
 }
 
-nav .search-container {
-  float: right;
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+  .burger{
+    display: none;
+  }
 }
 
-nav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
+@media screen and (max-width: 768px){
+  .menu{
+    display: none;
+  }
 
-nav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-nav .search-container button:hover {
-  background: #ccc;
+  .burger {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .burger #myLinks {
+    display: none;
+  }
+  
+  .burger a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .burger a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .burger a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 }

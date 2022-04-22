@@ -27,6 +27,30 @@ section{
     flex-direction: column;
 }
 
+article h1{
+  color: white;
+}
+
+div{
+  display: inline-flex;
+  margin: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 300px;
+}
+
+.normal_bild{
+  background-color: white;
+}
+
+img{
+  width: 200px;
+}
+
 aside{
     display: inline-flex;
     background-color: white;
@@ -84,6 +108,46 @@ img{
 
 
 
+
+@media screen and (min-width: 768px){
+  .burger{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .menu{
+    display: none;
+  }
+
+  .burger {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .burger #myLinks {
+    display: none;
+  }
+  
+  .burger a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .burger a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .burger a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
 
 
 
@@ -145,3 +209,23 @@ nav .search-container button {
 nav .search-container button:hover {
   background: #ccc;
 }
+
+
+
+
+
+
+
+body,
+      html {
+        height: 100%;
+      }
+
+      .hero-image {
+        background-image: url("martin.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #2196F3;
+      }
