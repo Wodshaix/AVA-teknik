@@ -12,6 +12,13 @@ nav{
     align-items: center;
 }
 
+iframe{
+  margin-right: 50px;
+  width:600px;
+  height:450px;
+  border: 0
+}
+
 section{
     display: inline-flex;
     background-color: white;
@@ -86,32 +93,23 @@ img{
     margin-bottom: 30px;
 }
 
-.bil{
-    width: 400px;
-}
-
-.soligt_datorer{
-    width: 400px;
-}
-
-.teknik_tjejer{
-    width: 400px;
-}
-
-.fängelse{
-    width: 350px;
-}
-
 .t1{
     max-width: fit-content;
 }
 
+h1{
+  text-align: center;
+}
 
 
 
 @media screen and (min-width: 768px){
   .burger{
     display: none;
+  }
+
+  #karta{
+    display:none
   }
 }
 
@@ -146,6 +144,10 @@ img{
   .burger a:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  iframe{
+    display: none;
   }
 }
 
@@ -227,5 +229,5 @@ body,
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        color: #2196F3;
+        color: #c921f3;
       }

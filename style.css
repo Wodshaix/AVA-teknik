@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: black;
+  background-color: white;
 }
 
 header{
@@ -11,7 +11,7 @@ header{
 
 section{
   display: inline-flex;
-  background-color: white;
+  background-color: #e9e9e9;
   margin: 50px;
   padding-right: 50px;
   padding-left: 50px;
@@ -31,7 +31,7 @@ section{
 
 aside{
   display: inline-flex;
-  background-color: white;
+  background-color: #e9e9e9;
   flex-direction: column;
   margin: 50px;
   padding-right: 50px;
@@ -83,6 +83,81 @@ img{
 .t1{
   max-width: fit-content;
 }
+
+
+
+
+
+
+
+i {
+  display: inline-block;
+}
+
+.schoolsoft:hover i {
+  animation: user 1s linear infinite;
+  -webkit-animation: user 1s linear infinite;
+}
+
+@keyframes user {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.kursschema:hover i {
+  animation: student 1s linear infinite;
+  -webkit-animation: student 1s linear infinite;
+}
+
+
+@keyframes student {
+  0% {
+    transform: translateY(50%);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  75% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+
+
+
+.kontakta:hover i{
+  animation: mobil .25s linear infinite;
+  -webkit-animation: mobil .25s linear infinite;
+}
+
+@keyframes mobil{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 1150px) {
   body{
@@ -136,6 +211,8 @@ img{
     color: black;
   }
 }
+
+
 
 
 
@@ -290,4 +367,57 @@ body,
 
 h1{
   text-align: center;
+}
+
+
+
+
+
+
+
+#myUL {
+  list-style-type: none;
+  display:none;
+}
+
+#myInput:focus ~ #myUL {
+  display: block;
+}
+
+ul{
+  position: absolute;
+}
+
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+i.fa-bars {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
 }

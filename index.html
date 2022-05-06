@@ -17,29 +17,51 @@
       <nav>
         <div class="menu">
           <a href="index.html" class="active">Hemsida</a>
-          <a href="https://service.taby.se/LMS#!" target="_blank"
+          <a
+            href="https://service.taby.se/LMS#!"
+            target="_blank"
+            class="schoolsoft"
             ><i class="fas fa-user-circle"></i>Schoolsoft</a
           >
-          <a href="kurschema.html"
+          <a href="kurschema.html" class="kursschema"
             ><i class="fas fa-graduation-cap"></i>Kursschema</a
           >
-          <a href="kontakta_åva.html"
+          <a href="kontakta_åva.html" class="kontakta"
             ><i class="fas fa-mobile-alt"></i>Kontakta ÅVA</a
           >
         </div>
         <div class="search-container">
           <form action="/action_page.php">
-            <input type="text" placeholder="Search..." name="search" />
+            <input
+              type="text"
+              placeholder="Sök klass"
+              id="myInput"
+              onkeyup="myFunction()"
+            />
             <button type="submit"><i class="fas fa-search"></i></button>
+            <ul id="myUL">
+              <li>
+                <a href="https://avateknik.se/te16a/" target="_blank">TE16A</a>
+              </li>
+              <li>
+                <a href="https://avateknik.se/te18a/" target="_blank">TE18A</a>
+              </li>
+              <li>
+                <a href="https://te20a.avateknik.se/" target="_blank">TE20A</a>
+              </li>
+              <li>
+                <a href="https://te20d.avateknik.se/" target="_blank">TE20D</a>
+              </li>
+            </ul>
           </form>
         </div>
         <div class="burger">
           <a
             href="javascript:void(0);"
             class="hamburger"
-            onclick="myFunction()"
+            onclick="burgerFunction()"
           >
-            <i class="fa fa-bars"></i>
+            <i onclick="iconFunction(this)" class="fas fa-bars"></i>
           </a>
           <div id="myLinks">
             <a href="index.html" class="active">Hemsida</a>
@@ -56,51 +78,53 @@
         </div>
       </nav>
     </header>
-    <section class="section_1">
-      <div class="hero-image">
-        <div>
-          <h1>
-            ÅVA Teknik
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-          </h1>
+    <main>
+      <section class="section_1">
+        <div class="hero-image">
+          <div>
+            <h1>
+              ÅVA Teknik
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </h1>
+          </div>
         </div>
-      </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eveniet
-        perferendis vitae officiis, quibusdam quaerat dignissimos culpa
-        repudiandae officia libero impedit dolores corporis, ratione voluptates
-        cum ipsum omnis enim eligendi.
-      </p>
-    </section>
-    <aside>
-      <img class="soligt_datorer" src="soligt_datorer.png" />
-      <a>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        ipsam doloribus hic provident sint, officiis perspiciatis nihil, minima
-        quibusdam consequuntur harum architecto reiciendis itaque ex molestias
-        dolorem facilis amet id?
-      </a>
-    </aside>
-    <section class="section_2">
-      <img class="teknik_tjejer" src="Teknik_tjejer.jpeg" />
-      <img class="fängelse" src="Fängelse.jpeg" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum,
-        repellendus blanditiis, sed nihil in molestiae, aliquid atque
-        voluptatibus non nostrum nemo? Quibusdam, id nemo et quae quod
-        laudantium numquam. Lorem ipsum dolor, sit amet consectetur adipisicing
-        elit. Adipisci quis voluptate nemo. Nam nulla velit fuga possimus, quis
-        porro accusantium iure nostrum architecto quam dolore dicta aliquid
-        impedit corrupti ipsam?
-      </p>
-    </section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eveniet
+          perferendis vitae officiis, quibusdam quaerat dignissimos culpa
+          repudiandae officia libero impedit dolores corporis, ratione
+          voluptates cum ipsum omnis enim eligendi.
+        </p>
+      </section>
+      <aside>
+        <img class="soligt_datorer" src="soligt_datorer.png" />
+        <a>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          ipsam doloribus hic provident sint, officiis perspiciatis nihil,
+          minima quibusdam consequuntur harum architecto reiciendis itaque ex
+          molestias dolorem facilis amet id?
+        </a>
+      </aside>
+      <section class="section_2">
+        <img class="teknik_tjejer" src="Teknik_tjejer.jpeg" />
+        <img class="fängelse" src="Fängelse.jpeg" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum,
+          repellendus blanditiis, sed nihil in molestiae, aliquid atque
+          voluptatibus non nostrum nemo? Quibusdam, id nemo et quae quod
+          laudantium numquam. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Adipisci quis voluptate nemo. Nam nulla velit fuga
+          possimus, quis porro accusantium iure nostrum architecto quam dolore
+          dicta aliquid impedit corrupti ipsam?
+        </p>
+      </section>
+    </main>
     <footer></footer>
     <script src="Åva.js"></script>
   </body>
