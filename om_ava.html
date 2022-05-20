@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="kontakta_åva.css" />
+    <link rel="stylesheet" href="om_ava.css" />
     <title>Kontakta Åva</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
         src="https://kit.fontawesome.com/4b39a549d2.js"
         crossorigin="anonymous"
       ></script>
-      <img class="logo" src="logo (1).png" />
+      <img class="logo" src="Åva_logo.png" />
       <nav>
         <a href="index.html">Hemsida</a>
         <a href="https://service.taby.se/LMS#!" target="_blank"
@@ -62,6 +62,66 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32464.2001658879!2d18.0738164!3d59.4328659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1651068304690!5m2!1ssv!2sse"
         ></iframe>
       </section>
+
+      <form>
+        <div class="form-group">
+          <label for="contact-name">Namn</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contact-name"
+            name="name"
+            placeholder="Skriv ditt namn.."
+            onkeyup="validateName()"
+          />
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-phone">Telefon nummer</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="contact-phone"
+            name="phone"
+            placeholder="Ex: 1231231234"
+            onkeyup="validatePhone()"
+          />
+          <span class="error-message" id="phone-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email adress</label>
+          <input
+            type="email"
+            class="form-control"
+            id="contact-email"
+            name="email"
+            placeholder="Skriv email"
+            onkeyup="validateEmail()"
+          />
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">Ditt meddelande</label>
+          <textarea
+            class="form-control"
+            rows="5"
+            id="contact-message"
+            name="message"
+            placeholder="Skriv ett kort meddelande..."
+            onkeyup="validateMessage()"
+          ></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+
+        <button onclick="return validateForm()" class="btn btn-default">
+          Skicka
+        </button>
+        <span class="error-message" id="submit-error"></span>
+      </form>
+
       <article>
         <h1>Några i personalen som teknik klasserna interagerar med</h1>
 
@@ -139,6 +199,6 @@
         </div>
       </article>
     </main>
-    <script src="kontakta_åva.js" defer></script>
+    <script src="om_ava.js" defer></script>
   </body>
 </html>

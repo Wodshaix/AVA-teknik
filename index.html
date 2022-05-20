@@ -5,6 +5,12 @@
       src="https://kit.fontawesome.com/4b39a549d2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +19,9 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="logo (1).png" />
+      <img class="logo" src="Åva_logo.png" alt="Åvas logo" />
       <nav>
-        <div class="menu">
+        <div class="menu" id="menuLinks">
           <a href="index.html" class="active">Hemsida</a>
           <a
             href="https://service.taby.se/LMS#!"
@@ -26,17 +32,33 @@
           <a href="kurschema.html" class="kursschema"
             ><i class="fas fa-graduation-cap"></i>Kursschema</a
           >
-          <a href="kontakta_åva.html" class="kontakta"
-            ><i class="fas fa-mobile-alt"></i>Kontakta ÅVA</a
+          <a href="om_ava.html" class="om"
+            ><i class="fas fa-mobile-alt"></i>Om ÅVA</a
+          >
+        </div>
+        <div class="burger" id="burgerLinks">
+          <a href="index.html" class="active">Hemsida</a>
+          <a
+            href="https://service.taby.se/LMS#!"
+            target="_blank"
+            class="schoolsoft"
+            ><i class="fas fa-user-circle"></i>Schoolsoft</a
+          >
+          <a href="kurschema.html" class="kursschema"
+            ><i class="fas fa-graduation-cap"></i>Kursschema</a
+          >
+          <a href="om_ava.html" class="om"
+            ><i class="fas fa-mobile-alt"></i>Om ÅVA</a
           >
         </div>
         <div class="search-container">
           <form action="/action_page.php">
             <input
               type="text"
+              autocomplete="off"
               placeholder="Sök klass"
               id="myInput"
-              onkeyup="myFunction()"
+              onkeyup="search()"
             />
             <button type="submit"><i class="fas fa-search"></i></button>
             <ul id="myUL">
@@ -55,25 +77,11 @@
             </ul>
           </form>
         </div>
-        <div class="burger">
-          <a
-            href="javascript:void(0);"
-            class="hamburger"
-            onclick="burgerFunction()"
-          >
-            <i onclick="iconFunction(this)" class="fas fa-bars"></i>
-          </a>
-          <div id="myLinks">
-            <a href="index.html" class="active">Hemsida</a>
-            <a href="https://service.taby.se/LMS#!" target="_blank"
-              ><i class="fas fa-user-circle"></i>Schoolsoft</a
-            >
-            <a href="kurschema.html"
-              ><i class="fas fa-graduation-cap"></i>Kursschema</a
-            >
-            <a href="kontakta_åva.html"
-              ><i class="fas fa-mobile-alt"></i>Kontakta ÅVA</a
-            >
+        <div class="burger" onclick="burgerLinks()">
+          <div class="container" onclick="burgermenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
         </div>
       </nav>
@@ -103,7 +111,12 @@
         </p>
       </section>
       <aside>
-        <img class="soligt_datorer" src="soligt_datorer.png" />
+        <img
+          class="soligt_datorer"
+          src="soligt_datorer.png"
+          alt="Personer med datorer i solen"
+        />
+        <h3>Någon slags rubrik</h3>
         <a>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           ipsam doloribus hic provident sint, officiis perspiciatis nihil,
@@ -112,20 +125,26 @@
         </a>
       </aside>
       <section class="section_2">
-        <img class="teknik_tjejer" src="Teknik_tjejer.jpeg" />
-        <img class="fängelse" src="Fängelse.jpeg" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum,
-          repellendus blanditiis, sed nihil in molestiae, aliquid atque
-          voluptatibus non nostrum nemo? Quibusdam, id nemo et quae quod
-          laudantium numquam. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Adipisci quis voluptate nemo. Nam nulla velit fuga
-          possimus, quis porro accusantium iure nostrum architecto quam dolore
-          dicta aliquid impedit corrupti ipsam?
-        </p>
+        <img
+          class="teknik_tjejer"
+          src="Teknik_tjejer.jpeg"
+          alt="Alla tjejer som började i teknik 2020"
+        />
+        <img class="fängelse" src="Fängelse.jpeg" alt="Åva gymnasium" />
+        <div>
+          <h3>Någon slags rubrik</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            ipsum, repellendus blanditiis, sed nihil in molestiae, aliquid atque
+            voluptatibus non nostrum nemo? Quibusdam, id nemo et quae quod
+            laudantium numquam. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Adipisci quis voluptate nemo. Nam nulla velit fuga
+            possimus, quis porro accusantium iure nostrum architecto quam dolore
+            dicta aliquid impedit corrupti ipsam?
+          </p>
+        </div>
       </section>
     </main>
-    <footer></footer>
-    <script src="Åva.js"></script>
+    <script src="Ava.js"></script>
   </body>
 </html>

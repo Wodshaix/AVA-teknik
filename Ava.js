@@ -1,29 +1,17 @@
-function burgerFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+function burgermenu(x) {
+  x.classList.toggle("change");
+}
+
+function burgerLinks() {
+  var x = document.getElementById("burgerLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
+}
 
-
-const wrapper = document.getElementById('burger_icon')
-
-wrapper.addEventListener("click", () => {
-  wrapper.classList.toggle("open")
-})
-
-
-
-
-
-
-
-
-
-
-function myFunction() {
+function search() {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();

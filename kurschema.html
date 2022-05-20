@@ -9,11 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="kursschema.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Teknik Kursschema</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="logo (1).png" />
+      <img class="logo" src="Åva_logo.png" />
       <nav>
         <a href="index.html">Hemsida</a>
         <a href="https://service.taby.se/LMS#!" target="_blank"
@@ -22,9 +28,7 @@
         <a href="kurschema.html" class="active"
           ><i class="fas fa-graduation-cap"></i>Kursschema</a
         >
-        <a href="kontakta_åva.html"
-          ><i class="fas fa-mobile-alt"></i>Kontakta ÅVA</a
-        >
+        <a href="om_ava.html"><i class="fas fa-mobile-alt"></i>Kontakta ÅVA</a>
         <div class="burger">
           <a
             href="javascript:void(0);"
@@ -50,7 +54,11 @@
     </header>
     <main>
       <section>
-        <img class="planering" src="programplanering.png" />
+        <img
+          class="planering"
+          src="programplanering.png"
+          alt="En bild på teknik programmens programplanering"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum,
           eveniet ut eius vel repellendus nihil fugit recusandae perspiciatis
@@ -59,12 +67,16 @@
         </p>
         <a
           href="https://gymnasieantagningen.storsthlm.se/media/42fbtti4/t%C3%A4by-kommun.pdf"
+          target="_blank"
           >Antagningsstatistik ÅVA</a
         >
       </section>
       <aside>
         <div>
-          <img src="programering.png" />
+          <img
+            src="programering.png"
+            alt="Två tjejer från åva som programerar"
+          />
           <h2>Info Media Teknik</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -81,11 +93,14 @@
             possimus pariatur veniam rem debitis dignissimos animi placeat quis,
             quae harum!
           </p>
-          <img src="design.webp" />
+          <img src="design.webp" alt="Någon som mäter på en ritning" />
         </div>
         <div>
           <h2>Teknikvetenskap</h2>
-          <img src="teknikvetenskap.jpeg" />
+          <img
+            src="teknikvetenskap.jpeg"
+            alt="Två tjejer som bygger på en teknisk manick"
+          />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
             harum quasi cupiditate doloremque ipsa! Officiis ipsa sit saepe
@@ -94,6 +109,39 @@
           </p>
         </div>
       </aside>
+      <table>
+        <thead>
+          <tr>
+            <th>Högskola</th>
+            <th>Antal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kungliga tekniska högskolan</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>Handelshögskolan</td>
+            <td>51</td>
+          </tr>
+          <tr>
+            <td>Uppsala universitet</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>Göteborgs universitet</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Tot som pluggar vidare varje år</td>
+            <td>258</td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
   </body>
 </html>
