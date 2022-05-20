@@ -200,7 +200,7 @@ html {
 }
       
 .hero-image {
-  background-image: url("images/marias_klass.jpg");
+  background-image: url("marias_klass.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
